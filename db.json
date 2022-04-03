@@ -1,0 +1,19 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "sabun",
+      "price": 2000
+    },
+    {
+      "id": 2,
+      "name": "shampo",
+      "price": 1500
+    },
+    {
+      "name": "odol",
+      "price": "10010",
+      "id": 3
+    }
+  ]
+}

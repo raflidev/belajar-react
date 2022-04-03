@@ -1,0 +1,25 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJSYWZsaSIsImVtYWlsIjoicmFmbGlAZ21haWwuY29tIiwiaWF0IjoxNjQ4OTcyODQyLCJleHAiOjE2NDg5NzI4NjJ9.KPTwc9ZTlxyHXRZiBT3N_c7nbnBRU1E_IfzqVvDJAWA
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+  "name": "Rafli 2",
+  "email": "rafli2@gmail.com",
+  "password": "qwerty",
+  "confPassword": "qwertyi"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+  "email": "rafli@gmail.com",
+  "password": "qwerty"
+}
+
+###
+GET http://localhost:5000/token

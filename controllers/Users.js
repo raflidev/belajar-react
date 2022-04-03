@@ -58,12 +58,10 @@ export const Login = async(req,res) => {
 
     res.cookie('refreshToken', refreshToken, {
       httpOnly: true,
-      maxAge: 24 * 60 * 60 * 1000,
+      maxAge: 24 * 60 * 60 * 1000
     })
 
-    res.json({
-      accessToken
-    })
+    res.json({accessToken})
   } catch (error) {
     res.status(404).json({msg: "Email tidak ditemukan"})
   }
